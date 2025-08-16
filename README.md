@@ -19,7 +19,7 @@ A lightweight, browser-based **Screen Recording Manager** built with **JavaScrip
 
 1. Clone this repo:
     ```bash
-    git clone https://github.com/farz-bhullar/screen-recording-manager.git
+    git clone https://github.com/farz-bhullar/screen-recorder.git
     cd screen-recording-manager
     ```
 
@@ -31,7 +31,7 @@ A lightweight, browser-based **Screen Recording Manager** built with **JavaScrip
 ## 📂 Project Structure
 
 ```bash
-screen-recording-manager/
+screen-recorder/
 ├── index.html
 ├── css/
 │   └── style.css
