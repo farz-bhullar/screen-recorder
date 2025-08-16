@@ -1,4 +1,4 @@
-# Screen Recording Manager (Web)
+# Screen Recorder (Web)
 
 A lightweight, browser-based **Screen Recording Manager** built with **JavaScript**. It allows you to record your screen with optional microphone audio, and provides smart controls like start, pause, resume, and stop. Recordings can be previewed in a new tab or downloaded directly.
 
