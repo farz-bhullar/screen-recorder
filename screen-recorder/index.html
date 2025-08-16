@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screen Recorder</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<h1>Screen Recorder</h1>
+
+<div class="controls">
+  <div class="audio-control">
+    <input type="checkbox" id="audioCheckbox" checked="true" />
+    <label for="audioCheckbox">Record Audio (Microphone)</label>
+  </div>
+  <div class="buttons">
+    <button id="startBtn">Start Recording</button>
+    <button id="pauseBtn" style="display:none">Pause</button>
+    <button id="resumeBtn" style="display:none">Resume</button>
+    <button id="stopBtn" style="display:none">Stop</button>
+  </div>
+</div>
+
+<div class="status" id="status">Idle</div>
+<div id="recordings"></div>
+
+<script src="js/screen-recording-manager.js"></script>
+<script src="./js/custom.js"></script>
+</body>
+</html>
