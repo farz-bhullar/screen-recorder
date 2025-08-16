@@ -40,11 +40,36 @@ screen-recorder/
     └── custom.js
 ```
 
-## ⚡ Customization
 
-- Adjust controls, styles, or behavior by modifying `custom.js`.
-- Extend recording functionality for multiple screens or advanced features.
-- Can be integrated into other web applications.
+## ⚡ Customization & Reusability
+
+This project is fully **customizable** and **easy to integrate** into any web application.  
+You can take the code, adapt it to your own requirements, add new features, or extend its functionality.  
+Designed to be **plug-and-play**, it’s perfect for developers looking to build browser-based screen recording tools quickly.
+
+### Example: Customizing for Your App
+
+```html
+<script src="js/screen-recording-manager.js"></script>
+<script>
+  // Initialize manager with custom callbacks
+  const manager = new ScreenRecordingManager({
+    onStart: () => console.log('Recording started!'),
+    onStop: (blob, fileName) => {
+      console.log('Recording stopped:', fileName);
+      // You can save it to server, or process it
+    }
+  });
+
+  // Start recording with audio
+  manager.startRecording({ video: true, audio: true });
+
+  // Stop after 10 seconds
+  setTimeout(() => manager.stopRecording(), 10000);
+</script>
+```
+
+> 💡 You can extend this by adding multiple recordings, custom UI, or integrating with your backend for automated saving.
 
 ## 📌 Author
 
